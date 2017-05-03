@@ -85,7 +85,8 @@ Vue2.2.6  你想要的东西可能在根目录的package.json里面。
 so cool
 
 ### 参数详解
->onClass：
+>onClass
+
     类型：String
     默认值：'',
     是否必传：false
@@ -95,6 +96,7 @@ so cool
     如果你没有这个需求，那你管他干嘛呢
 
 >onTipShow
+
     类型：Boolean
     默认值：true,
     是否必传：false
@@ -102,6 +104,7 @@ so cool
     作用：控制上拉加载更多和下拉刷新的文字提示是否显示
 
 >onTip
+
     类型：String
     默认值：'加载成功',
     是否必传：false
@@ -109,6 +112,7 @@ so cool
     作用：控制加载成功或者失败的提示语，你想怎么蹂躏他呢？
 
 >onMore
+
     类型：Boolean
     默认值：false,
     是否必传：true
@@ -116,6 +120,7 @@ so cool
     作用：决定本次上拉或者下拉是否状态是否完成，我才不管你请求成功与否
 
 >onContentChange
+
     类型：Boolean
     默认值：false,
     是否必传：false
@@ -125,6 +130,7 @@ so cool
     如果你没有这个需求，那你管他干嘛呢
 
 >onMode
+
     类型：Number
     默认值：0,
     是否必传：false
@@ -136,6 +142,7 @@ so cool
             3: 老子不管了，什么都不做，就只有滑动怎么了
 
 >onInfinite
+
     类型：Function
     默认值：function(){},
     是否必传：false
@@ -143,6 +150,7 @@ so cool
     作用：上拉加载更多执行的函数，你也看到我有默认值了
 
 >onRefresh
+
     类型：Function
     默认值：function(){},
     是否必传：false
