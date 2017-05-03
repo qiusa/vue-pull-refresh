@@ -26,6 +26,7 @@ Vue2.2.6  你想要的东西可能在根目录的package.json里面。
 >Vue.component('v-refresh',vRefresh);
 
 2、你来看下就是了
+
     <template>
         <div>
             <v-refresh 
