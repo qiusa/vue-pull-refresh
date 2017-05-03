@@ -1,25 +1,30 @@
-#嗯 你可能认为我会说些什么
+<h3> 嗯 你可能认为我会说些什么 </h3>
 
-#框架
+<h3> 框架 </h3>
 这个模板是使用vue-cli这个脚手架初始化的项目，你可以自己尝试下。因为我用的是scss，所以安装完成之后还需要装sass-loader，有些时候node-sass又因为什么什么的给什么什么了，所以也需要装下，嗯，差不多就是这样。
 
 Vue2.2.6  你想要的东西可能在根目录的package.json里面。
 
-#他是做什么的
+<h3>  他是做什么的 </h3> 
 哇哈哈哈，咳咳，他是一个上拉加载更多和下拉刷新的组件，因为刚性的需求，我不得不做，所以做好了分享下，并且欢迎大家给建议，毕竟老夫还是个柴鸡。
 
-#怎么用？
-一脸懵逼
+<h1>怎么用？</h1>
+一脸懵逼<br/>
+
 你想剔出来用？
+
 核心文件
-src/components/pull_refresh.vue
-src/style/pull_refresh.scss
+
+>src/components/pull_refresh.vue
+>src/style/pull_refresh.scss
 
 1、在公共入口处或者局部使用都行
-import vRefresh from './components/pull_refresh.vue'
-Vue.component('v-refresh',vRefresh);
+
+>import vRefresh from './components/pull_refresh.vue'
+>Vue.component('v-refresh',vRefresh);
+
 2、你来看下就是了
-    `<template>
+    <template>
         <div>
             <v-refresh 
             :on-class = "'model-scroll'"
@@ -72,7 +77,7 @@ Vue.component('v-refresh',vRefresh);
                 }
             }
         }
-    </script>`
+    </script>
 
 so cool
 
@@ -82,7 +87,9 @@ so cool
     默认值：'',
     是否必传：false
 
-    作用：为scroll-box增加自定义样式名，注：如果需要监听内容更改onContentChange并定位到顶部需要传递onClass参数，如果你没有这个需求，那你管他干嘛呢
+    作用：为scroll-box增加自定义样式名，
+    注：如果需要监听内容更改onContentChange并定位到顶部需要传递onClass参数，
+    如果你没有这个需求，那你管他干嘛呢
 
 >onTipShow
     类型：Boolean
@@ -110,7 +117,9 @@ so cool
     默认值：false,
     是否必传：false
 
-    作用：监听pull-content里面的内容是否更改，注：如果需要监听内容更改onContentChange并定位到顶部需要传递onClass参数，如果你没有这个需求，那你管他干嘛呢
+    作用：监听pull-content里面的内容是否更改，
+    注：如果需要监听内容更改onContentChange并定位到顶部需要传递onClass参数，
+    如果你没有这个需求，那你管他干嘛呢
 
 >onMode
     类型：Number
@@ -138,7 +147,8 @@ so cool
     作用：下拉刷新执行的函数，你也看到我兄弟有默认值了
 
 
-#你认为我玩了？
+# 你认为我玩了？
+
 是的，没错，完了，如果你发现了bug，那么很不幸，快点和我说，我把它修复了你就当没有发生过，如果没有发现bug而且你觉得对你有些用，来吧，给我些鼓励，star一下吧（我才不管，你不给我star，今天你跑不掉）。
 
 #END
